@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Contato</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+<section id="contato">
+  <h2>Contato</h2>
 
-<header>
-    <h1>Contato</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="formacao.html">Formação</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
+  <form id="contactForm">
+    
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome">
 
-<section>
-    <p>Email: seuemail@exemplo.com</p>
-    <p>Telefone: (00) 00000-0000</p>
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+
+    <button type="submit">Enviar</button>
+    
+    <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+      Mensagem enviada com sucesso!
+    </p>
+
+  </form>
 </section>
-
-</body>
-</html>
