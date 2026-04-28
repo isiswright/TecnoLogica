@@ -6,7 +6,7 @@ Este projeto foi desenvolvido como atividade prática da disciplina de **Fundame
 
 ## Acesso ao site
 
- Link do site publicado no GitHub Page:  
+ Link do site publicado no GitHub Pages:  
 https://isiswright.github.io/TecnoLogica/
 
 ---
