@@ -1,4 +1,4 @@
-**Portfólio Pessoal - Projeto Acadêmico**
+## Portfólio Pessoal - Projeto Acadêmico
 
 Este projeto foi desenvolvido como atividade prática da disciplina de **Fundamentos da Programação Web**, utilizando apenas HTML5, CSS3 e JavaScript.
 
