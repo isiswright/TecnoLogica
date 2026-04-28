@@ -1,22 +1,47 @@
-<section id="contato">
-  <h2>Contato</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
 
+<body>
+
+<!-- MENU -->
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+</nav>
+<!-- FORMULÁRIO DE CONTATO -->
+  <section id="contato">
+  <h2>Contato</h2>
+<!-- Formulário validado com JavaScript -->
   <form id="contactForm">
-    
+<!-- Nome -->    
     <label for="name">Nome:</label>
     <input type="text" id="name" name="name" placeholder="Digite seu nome">
-
+<!-- E-mail -->
     <label for="email">E-mail:</label>
     <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
-
+<!-- Mensagem -->
     <label for="message">Mensagem:</label>
     <textarea id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
-
+<!-- Botão -->
     <button type="submit">Enviar</button>
-    
+<!-- Mensagem de sucesso -->    
     <p id="successMessage" style="display:none; color:green; margin-top:10px;">
       Mensagem enviada com sucesso!
     </p>
 
   </form>
 </section>
+
+  <!-- JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
