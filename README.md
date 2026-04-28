@@ -1,17 +1,17 @@
-# 💼 Portfólio Pessoal - Projeto Acadêmico
+**Portfólio Pessoal - Projeto Acadêmico**
 
-Este projeto foi desenvolvido como atividade prática da disciplina de **Fundamentos da Programação Web**, utilizando apenas HTML5, CSS3 e JavaScript puro, sem frameworks.
+Este projeto foi desenvolvido como atividade prática da disciplina de **Fundamentos da Programação Web**, utilizando apenas HTML5, CSS3 e JavaScript.
 
 ---
 
-## 🚀 Acesso ao site
+## Acesso ao site
 
-🔗 Link do site publicado no GitHub Pages:  
+ Link do site publicado no GitHub Page:  
 https://isiswright.github.io/TecnoLogica/
 
 ---
 
-## 📁 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - HTML5  
 - CSS3 (sem frameworks)  
@@ -19,19 +19,19 @@ https://isiswright.github.io/TecnoLogica/
 
 ---
 
-## 📌 Estrutura do site
+## Estrutura do site
 
 O portfólio contém as seguintes páginas:
 
-- 🏠 Início (index.html)
-- 👩‍💻 Sobre mim (sobre.html)
-- 🎓 Formação (formacao.html)
-- 💼 Portfólio (portfolio.html)
-- 📩 Contato (contato.html)
+-  Início (index.html)
+-  Sobre mim (sobre.html)
+-  Formação (formacao.html)
+-  Portfólio (portfolio.html)
+-  Contato (contato.html)
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
 - Menu de navegação presente em todas as páginas  
 - Layout simples e responsivo  
@@ -43,7 +43,7 @@ O portfólio contém as seguintes páginas:
 
 ---
 
-## 💻 Como o projeto foi desenvolvido
+## Como o projeto foi desenvolvido
 
 O site foi construído utilizando:
 
@@ -54,13 +54,14 @@ O site foi construído utilizando:
 
 ---
 
-## 📚 Objetivo do projeto
+## Objetivo do projeto
 
 O objetivo deste projeto é aplicar os conhecimentos básicos de desenvolvimento web, incluindo estruturação de páginas, estilização e validação de formulários com JavaScript.
 
 ---
 
-## 👩‍🎓 Autora
+##  Autora
 
-Ísis Oliveira Silva  
-Projeto acadêmico - Programação Web
+Isis Oliveira Silva  
+ATIVIDADE PRÁTICA – FUNDAMENTOS DA PROGRAMAÇÃO WEB
+
