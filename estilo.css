@@ -1,17 +1,18 @@
+<!--Estilo geral da pagina-->
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
 }
-
+<!--Menu-->
 header {
     background-color: #222;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
+<!--Link do menu-->
 nav a {
     color: white;
     margin: 0 10px;
