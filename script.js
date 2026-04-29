@@ -57,8 +57,8 @@ function toggleTheme() {
     const button = document.getElementById("themeButton");
 
     if (document.body.classList.contains("dark-mode")) {
-        button.innerHTML = "☀️ Modo Claro";
-    } else {
         button.innerHTML = "🌙 Modo Escuro";
+    } else {
+        button.innerHTML = "☀️ Modo Claro";
     }
 }
