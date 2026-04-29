@@ -1,33 +1,87 @@
-/*Estilo geral da pagina*/
+/* ============================= */
+/* ESTILO GERAL DA PÁGINA */
+/* ============================= */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo */
+    color: #333; /* Cor do texto */
 }
-/*Menu*/
+
+/* ============================= */
+/* CABEÇALHO (HEADER) */
+/* ============================= */
 header {
-    background-color: #222;
-    color: white;
+    background-color: #222; /* Fundo escuro */
+    color: white; /* Texto branco */
     padding: 20px;
     text-align: center;
 }
-/*Link do menu*/
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+
+/* ============================= */
+/* MENU DE NAVEGAÇÃO */
+/* ============================= */
+nav {
+    margin-top: 10px;
 }
 
+/* Links do menu */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
 nav a:hover {
     text-decoration: underline;
 }
 
+/* ============================= */
+/* CONTEÚDO PRINCIPAL */
+/* ============================= */
 section {
     background: white;
     margin: 20px auto;
     padding: 20px;
     width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+/* ============================= */
+/* TÍTULOS */
+/* ============================= */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RODAPÉ */
+/* ============================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE (CELULAR) */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Ajusta largura do conteúdo */
+    section {
+        width: 90%;
+    }
+
+    /* Menu em coluna no mobile */
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
