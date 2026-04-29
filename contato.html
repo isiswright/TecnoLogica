@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- MENU DE NAVEGAÇÃO -->
+<!-- ========================= -->
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<!-- ========================= -->
+<!-- SEÇÃO DE CONTATO -->
+<!-- ========================= -->
+<section id="contato">
+
+    <h2>Contato</h2>
+
+    <!-- Formulário com validação JS -->
+    <form id="contactForm">
+
+        <!-- Campo Nome -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite seu nome">
+
+        <!-- Campo E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" placeholder="Digite seu e-mail">
+
+        <!-- Campo Mensagem -->
+        <label for="message">Mensagem:</label>
+        <textarea id="message" placeholder="Escreva sua mensagem"></textarea>
+
+        <!-- Botão enviar -->
+        <button type="submit">Enviar</button>
+
+        <!-- Mensagem de sucesso -->
+        <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+            Mensagem enviada com sucesso!
+        </p>
+
+    </form>
+
+</section>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT DO FORMULÁRIO -->
+<!-- ========================= -->
+<script>
+// Espera o HTML carregar totalmente antes de rodar o JS
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Captura o formulário
+    const form = document.getElementById("contactForm");
+
+    // Captura mensagem de sucesso
+    const successMessage = document.getElementById("successMessage");
+
+    // Evento de envio do formulário
+    form.addEventListener("submit", function (event) {
+
+        // Impede envio automático
+        event.preventDefault();
+
+        // Captura valores
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Expressão para validar e-mail
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Validação: campos vazios
+        if (name === "" || email === "" || message === "") {
+            alert("⚠️ Preencha todos os campos!");
+            return;
+        }
+
+        // Validação: e-mail inválido
+        if (!emailPattern.test(email)) {
+            alert("⚠️ E-mail inválido!");
+            return;
+        }
+
+        // Sucesso
+        successMessage.style.display = "block";
+
+        // Limpa formulário
+        form.reset();
+
+        // Oculta mensagem depois de 3 segundos
+        setTimeout(() => {
+            successMessage.style.display = "none";
+        }, 3000);
+
+    });
+
+});
+</script>
+
+</body>
+</html>
