@@ -78,26 +78,37 @@ footer {
         margin: 10px 0;
     }
 }
-/* ========================= */
-/* TEMA ESCURO */
-/* ========================= */
+
+/* TEMA ESCURO*/
+
+
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
-/* Conteúdo no modo escuro */
+/* TODOS OS BLOCOS */
 .dark-mode section {
     background-color: #1e1e1e;
     color: #ffffff;
 }
 
-/* Header no modo escuro */
+/* HEADER */
 .dark-mode header {
     background-color: #000;
 }
 
-/* Links no modo escuro */
+/* MENU */
+.dark-mode nav {
+    background-color: #000;
+}
+
+/* LINKS */
 .dark-mode nav a {
     color: #ffffff;
+}
+
+/* EVITA "CAIXAS BRANCAS" */
+.dark-mode body {
+    background-color: #121212;
 }
