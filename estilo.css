@@ -78,3 +78,26 @@ footer {
         margin: 10px 0;
     }
 }
+/* ========================= */
+/* TEMA ESCURO */
+/* ========================= */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Conteúdo no modo escuro */
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Header no modo escuro */
+.dark-mode header {
+    background-color: #000;
+}
+
+/* Links no modo escuro */
+.dark-mode nav a {
+    color: #ffffff;
+}
