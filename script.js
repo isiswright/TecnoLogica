@@ -1,49 +1,49 @@
-<script>
+// Espera o carregamento da página antes de rodar o script
+document.addEventListener("DOMContentLoaded", function () {
 
-// Adiciona um "ouvinte" para o evento de envio do formulário
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    
-    // Impede o envio padrão do formulário (não recarrega a página)
-    event.preventDefault(); 
+    // Captura o formulário
+    const form = document.getElementById("contactForm");
 
-    // Captura os valores digitados pelo usuário e remove espaços extras
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    // Seleciona o elemento onde será exibida a mensagem de sucesso
+    // Captura mensagem de sucesso
     const successMessage = document.getElementById("successMessage");
 
-    // Expressão regular para validar o formato do e-mail
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Evento de envio
+    form.addEventListener("submit", function (event) {
 
-    // Verifica se algum dos campos está vazio
-    if (name === "" || email === "" || message === "") {
-        alert("⚠️ Por favor, preencha todos os campos.");
-        return; // Interrompe a execução se houver erro
-    }
+        // Impede envio automático
+        event.preventDefault();
 
-    // Verifica se o e-mail informado está em formato válido
-    if (!emailPattern.test(email)) {
-        alert("⚠️ Por favor, insira um e-mail válido.");
-        return; // Interrompe a execução se o e-mail for inválido
-    }
+        // Captura valores
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-    // Se todas as validações passaram, exibe a mensagem de sucesso
-    successMessage.style.display = "block";
+        // Regex de e-mail
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Limpa os campos do formulário após o envio
-    document.getElementById("contactForm").reset();
+        // Validação: campos vazios
+        if (name === "" || email === "" || message === "") {
+            alert("⚠️ Preencha todos os campos!");
+            return;
+        }
 
-    // Após 3 segundos, esconde novamente a mensagem de sucesso
-    setTimeout(() => {
-        successMessage.style.display = "none";
-    }, 3000);
+        // Validação: e-mail inválido
+        if (!emailPattern.test(email)) {
+            alert("⚠️ E-mail inválido!");
+            return;
+        }
+
+        // Sucesso
+        successMessage.style.display = "block";
+
+        // Limpa formulário
+        form.reset();
+
+        // Esconde mensagem depois de 3s
+        setTimeout(() => {
+            successMessage.style.display = "none";
+        }, 3000);
+
+    });
+
 });
-
-</script>
-
-<!-- Mensagem no console para indicar que o site foi carregado corretamente -->
-<script>
-console.log("Site carregado com sucesso!");
-</script>
