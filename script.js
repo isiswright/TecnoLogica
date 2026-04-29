@@ -43,6 +43,21 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             successMessage.style.display = "none";
         }, 3000);
+        
+        // Função para alternar entre tema claro e escuro
+function toggleTheme() {
+
+    // Alterna a classe "dark-mode" no body
+    document.body.classList.toggle("dark-mode");
+
+    // Pega botão
+    const button = document.getElementById("themeButton");
+
+    // Troca texto do botão
+    if (document.body.classList.contains("dark-mode")) {
+        button.innerHTML = "☀️ Modo Claro";
+    } else {
+        button.innerHTML = "🌙 Modo Escuro";
 
     });
 
